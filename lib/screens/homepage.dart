@@ -23,11 +23,6 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
               context.read<AuthenticationService>().signOut();
               context.read<GoogleSignInProvider>().googleSignOut();
-              /*
-              final provider =
-                  Provider.of<GoogleSignInProvider>(context, listen: false);
-              provider.logout();
-               */
             },
           ),
         ],

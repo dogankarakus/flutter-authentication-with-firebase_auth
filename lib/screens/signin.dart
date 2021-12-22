@@ -160,7 +160,6 @@ class _SignInPageState extends State<SignInPage> {
   }
 
   Widget buildEmailField() {
-    //final provider = Provider.of<EmailSignInProvider>(context);
     return SizedBox(
       height: 60,
       child: TextFormField(
@@ -194,7 +193,6 @@ class _SignInPageState extends State<SignInPage> {
   }
 
   Widget buildPasswordField(String label) {
-    //final provider = Provider.of<EmailSignInProvider>(context);
     return SizedBox(
       height: 60,
       child: TextFormField(
@@ -208,7 +206,6 @@ class _SignInPageState extends State<SignInPage> {
             return 'Password must be at least 7 characters long.';
           }
         },
-        // onSaved: (password) =>  provider.userPassword = password!,
         obscureText: true,
         decoration: InputDecoration(
           fillColor: Colors.white,

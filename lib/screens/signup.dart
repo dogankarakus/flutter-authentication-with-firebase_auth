@@ -273,7 +273,6 @@ class _SignUpPageState extends State<SignUpPage> {
             return 'Password must be at least 7 characters long.';
           }
         },
-        // onSaved: (password) =>  provider.userPassword = password!,
         obscureText: true,
         decoration: InputDecoration(
           fillColor: Colors.white,
