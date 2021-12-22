@@ -1,17 +1,17 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth_db/assets/services/authentication_service.dart';
-import 'package:firebase_auth_db/google_sign_in.dart';
-import 'package:firebase_auth_db/homepage.dart';
-import 'package:firebase_auth_db/menu.dart';
-import 'package:firebase_auth_db/onboarding.dart';
-import 'package:firebase_auth_db/signin.dart';
-import 'package:firebase_auth_db/signup.dart';
+import 'package:firebase_auth_db/services/authentication_service.dart';
+import 'package:firebase_auth_db/services/google_sign_in.dart';
+import 'package:firebase_auth_db/screens/homepage.dart';
+import 'package:firebase_auth_db/screens/menu.dart';
+import 'package:firebase_auth_db/screens/onboarding.dart';
+import 'package:firebase_auth_db/screens/signin.dart';
+import 'package:firebase_auth_db/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
-import 'assets/providers/google_sign_in.dart';
+import 'services/google_sign_in.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();

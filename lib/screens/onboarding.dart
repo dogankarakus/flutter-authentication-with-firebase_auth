@@ -1,6 +1,6 @@
 import 'package:firebase_auth_db/main.dart';
-import 'package:firebase_auth_db/menu.dart';
-import 'package:firebase_auth_db/signup.dart';
+import 'package:firebase_auth_db/screens/menu.dart';
+import 'package:firebase_auth_db/screens/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

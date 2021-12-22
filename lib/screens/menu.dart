@@ -1,6 +1,6 @@
-import 'package:firebase_auth_db/assets/providers/google_sign_in.dart';
-import 'package:firebase_auth_db/signin.dart';
-import 'package:firebase_auth_db/signup.dart';
+import 'package:firebase_auth_db/services/google_sign_in.dart';
+import 'package:firebase_auth_db/screens/signin.dart';
+import 'package:firebase_auth_db/screens/signup.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
