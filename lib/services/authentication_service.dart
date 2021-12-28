@@ -11,12 +11,6 @@ class AuthenticationService extends ChangeNotifier {
 
   Stream<User?> get authStateChanges => _firebaseAuth.authStateChanges();
 
-  //Google Signin
-  final googleSignIn = GoogleSignIn();
-  GoogleSignInAccount? _user;
-  GoogleSignInAccount get user => _user!;
-
-  //
   Future<void> signOut() async {
     await _firebaseAuth.signOut();
   }

@@ -53,10 +53,15 @@ class AuthenticationWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final firebaseUser = context.watch<User?>();
-    if (firebaseUser != null) {
-      return HomePage();
-    }
-    return Menu();
+    return StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (_, snapshot) {
+          if (snapshot.hasData) {
+            User? user = snapshot.data;
+            return HomePage();
+          }
+
+          return Menu();
+        });
   }
 }
